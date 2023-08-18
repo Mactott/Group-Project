@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static' , filename='css/index.css')}}">
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Whats the Weather in:</h5>
+        <form id="weather">
+            <input type="text" name="city">
+        </form>
+        <p></p>
+        <a id="weatherButton" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+<div class="card" id="local-data" style="width: 18rem; margin-top: 15px; display: none;">
+    <div class="card-body">
+        <img id="weather-img" src="" style="width: 50px;" class="card-img-top">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item img" id="city"></li>
+            <li class="list-group-item" id="temp"></li>
+            <li class="list-group-item" id="wind"></li>
+            <li class="list-group-item" id="name"></li>
+            <li class="list-group-item" id="region"></li>
+            <li class="list-group-item" id="country"></li>
+            <li class="list-group-item" id="time"></li>
+        </ul>
+    </div>
+</div>
+
+
+{% endblock %}
+

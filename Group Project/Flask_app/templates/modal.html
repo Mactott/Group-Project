@@ -1,0 +1,29 @@
+
+<div class="modal fade" id="optionModal" tabindex="-1" aria-labelledby="optionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="optionModalLabel">Login or Register</h1>
+            </div>
+            <div class="modal-body" id="to-switch">
+                <form id="sign-in">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-2">
+                        <label for="exampleFormControlInput2" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="exampleFormControlInput2">
+                    </div>
+                    <div>
+                        <a class="pointer" href="#" onclick="switchFormR()">Register</a>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" form="sign-in">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
